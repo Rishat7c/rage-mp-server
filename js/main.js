@@ -1,12 +1,19 @@
 new Vue({
     el: '#app',
     data: {
-        title: "Hi, Rishat7c",
-        styleCSS: ""
+        value: 1
     },
     methods: {
-        changeText () {
-            this.title = 'Our text...';    
+        increment(value) {
+            this.value = value
+            if(this.value == 25) {
+                alert(true)
+            }
+        }
+    },
+    computed: {
+        doubleValue() {
+            return this.value * 2
         }
     }
 });

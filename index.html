@@ -10,12 +10,9 @@
 </head>
 <body>
     <div id="app">
-        <!-- v-on: или @ -->
-        <span @mouseover="changeText">Rishat7c</span>
-        <p>{{ title }}</p>
-        <p :class="styleCSS ">Text from input: {{ styleCSS }}</p>
-        <!-- v-bind или : -->
-        <input type="text" @input="styleCSS = $event.target.value">
+        <input type="text" @input="increment($event.target.value)">
+        <p>{{ value }}</p>
+        <p>{{ doubleValue }}</p>
     </div>
     <script src="js/main.js"></script>
 </body>
