@@ -14,6 +14,11 @@
         <button @click="show = !show">Show / Hide</button>
         <p v-if="show">Hidden text</p>
         <p v-else>Text 2</p>
+
+        <ul>
+            <li v-for="car in cars">{{ car.model }}</li>
+        </ul>
+
     </div>
 
     <script src="js/main.js"></script>
