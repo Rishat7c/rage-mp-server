@@ -11,15 +11,12 @@
 <body>
 
     <div id="app">
-        <button @click="show = !show">Show / Hide</button>
-        <p v-if="show">Hidden text</p>
-        <!-- Использования фильтра начинается с | символа-->
-        <p v-else> {{ message | lowercase | capatilize }} </p>
+        <app-car2></app-car2>
+    </div>
 
-        <ul>
-            <li v-for="car in cars">{{ car.model }}</li>
-        </ul>
-
+    <div id="app2">
+        <hr>
+        <app-car></app-car>
     </div>
 
     <script src="js/main.js"></script>
