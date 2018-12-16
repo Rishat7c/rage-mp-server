@@ -12,7 +12,12 @@ new Vue({
     },
     computed: {
         showMess() {
-            return this.message.toUpperCase();
+            return this.message.toUpperCase()
+        }
+    },
+    filters: {
+        lowercase(value) {
+            return value.toLowerCase()
         }
     },
     methods: {
