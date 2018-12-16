@@ -14,7 +14,7 @@
         <button @click="show = !show">Show / Hide</button>
         <p v-if="show">Hidden text</p>
         <!-- Использования фильтра начинается с | символа-->
-        <p v-else> {{ message | lowercase }} </p>
+        <p v-else> {{ message | lowercase | capatilize }} </p>
 
         <ul>
             <li v-for="car in cars">{{ car.model }}</li>
