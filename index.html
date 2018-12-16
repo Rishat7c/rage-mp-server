@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Learn Vue.js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
     <div id="app">
+        <!-- v-on: или @ -->
+        <span @mouseover="changeText">Rishat7c</span>
         <p>{{ title }}</p>
+        <p :class="styleCSS ">Text from input: {{ styleCSS }}</p>
+        <!-- v-bind или : -->
+        <input type="text" @input="styleCSS = $event.target.value">
     </div>
     <script src="js/main.js"></script>
 </body>
