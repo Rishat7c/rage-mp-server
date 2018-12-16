@@ -16,7 +16,22 @@ Vue.component('app-car', {
 
 new Vue({
     el: '#app',
-    data: {
-       
+    components: {
+        'app-car2': {
+        data: function() {
+            return {
+                cars: [
+                    {model: "Автомобили"},
+                    {model: "Мотоциклы"},
+                    {model: "Самолеты"},
+                ]
+            }
+        },
+        template: '<div><div class="car" v-for="car in cars"><p> {{ car.model }} </p></div></div>'
+        }
     }
+});
+
+new Vue({
+    el: '#app2'
 });
