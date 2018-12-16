@@ -9,14 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
+
     <div id="app">
-        <!-- v-on: или @ -->
-        <span @mouseover="changeText">Rishat7c</span>
-        <p>{{ title }}</p>
-        <p :class="styleCSS ">Text from input: {{ styleCSS }}</p>
-        <!-- v-bind или : -->
-        <input type="text" @input="styleCSS = $event.target.value">
+        <button @click="show = !show">Show / Hide</button>
+        <p v-if="show">Hidden text</p>
     </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>

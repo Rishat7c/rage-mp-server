@@ -1,8 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        title: "Hi, Rishat7c",
-        styleCSS: ""
+       show: true
     },
     methods: {
         changeText () {
